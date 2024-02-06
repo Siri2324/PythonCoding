@@ -2,3 +2,14 @@
 def wrap(string, max_width):
     return textwrap.fill(string,max_width)
 
+#without using inbuilt functions
+def wrap(string, max_width):
+    default_width = max_width
+    wrapped_string = ""
+    start_index = 0
+    while start_index < len(string):
+        wrapped_string += f"{string[start_index:max_width]}\n"
+        start_index = max_width
+        max_width += default_width
+    return wrapped_string
+
