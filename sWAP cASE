@@ -1,0 +1,18 @@
+#using inbulit swapcase()
+def swap_case(s):
+    return s.swapcase()
+
+# Without using inbuilt method
+def swap_case(s):
+    new_swappedstring=[]
+    for eachletter in s:
+        if eachletter.isupper():
+            new_swappedstring.append(eachletter.lower())
+        else:
+            new_swappedstring.append(eachletter.upper())
+    return "".join(new_swappedstring)
+
+# using list comprehension
+def swap_case(s):
+    new_swappedstring="".join([eachletter.lower() if eachletter.isupper() else eachletter.upper() for eachletter in s])
+    return new_swappedstring
