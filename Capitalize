@@ -1,0 +1,4 @@
+def solve(s):
+    split_text=s.split(" ")
+    final_str=" ".join([s.capitalize() for s in split_text])
+    return final_str
