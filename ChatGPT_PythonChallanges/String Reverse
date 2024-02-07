@@ -1,2 +1,6 @@
+----------------------------------
+Write a function called reverse_string that takes a string as input and returns the reverse of that string.
+__________________________________
+
 string1='hello'
 print(string1[::-1]) 
