@@ -1,0 +1,11 @@
+-------------------------------------------------
+Write a function called unique_elements that takes a list as input and returns a new list containing only the 
+unique elements from the original list. The order of elements in the new list should be the same as in the original list.
+--------------------------------------------------
+
+new_list=[]
+def unique_elements(list1):
+    for l in list1:
+        if l not in new_list:
+            new_list.append(l)
+    return new_list
