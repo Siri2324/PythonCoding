@@ -1,6 +1,11 @@
+-------------------------------------
+Write a function called count_vowels that takes a string as input and returns the count of vowels (a, e, i, o, u) in the string. 
+Ignore case sensitivity, meaning both uppercase and lowercase vowels should be counted.
+--------------------------------------
+
 def count_vowels(string1):
     count=0
     for s in string1:
-        if s in 'aeiou':
+        if s.lower() in 'aeiou':
             count+=1
     return count
