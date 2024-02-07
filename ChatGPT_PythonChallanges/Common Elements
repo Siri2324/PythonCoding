@@ -1,0 +1,11 @@
+---------------------------------
+Write a function called common_elements that takes two lists as input and returns a new list containing 
+only the elements that are common to both input lists. The order of elements in the new list doesn't matter.
+---------------------------------
+
+new_list=[]
+def common_elements(list1,list2):
+    for i in list1:
+        if i in list2:
+            new_list.append(i)
+    return new_list
