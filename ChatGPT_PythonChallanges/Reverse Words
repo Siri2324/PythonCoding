@@ -1,0 +1,11 @@
+------------------------------------------
+Write a function called reverse_words that takes a string as input and returns a new string where each word in the input string is reversed,
+while maintaining the order of words. Words are separated by spaces. 
+  You can assume that there are no leading or trailing spaces in the input string.
+------------------------------------------
+
+def reverse_words(string1):
+    revered_string=string1.split(" ")
+    revered_string=[word[::-1] for word in revered_string]
+    return ' '.join(revered_string)
+print(reverse_words("hello world"))
